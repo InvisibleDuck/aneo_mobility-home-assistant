@@ -1,0 +1,56 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.venv/
+venv/
+ENV/
+.env
+.env.*
+pip-wheel-metadata/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Secrets / keys ---
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# --- Home Assistant ---
+.storage/
+secrets.yaml
+secrets.yaml.*
+home-assistant_v2.db*
+home-assistant.log*
+*.log
+.backup/
+backups/
+tts/
+media/
+www/
+blueprints/
+custom_components/**/.translations_cache/
+
+# Common HA config files
+configuration.yaml
+automations.yaml
+scripts.yaml
+scenes.yaml
+known_devices.yaml

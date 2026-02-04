@@ -1,0 +1,66 @@
+{
+  "title": "Aneo Mobility",
+  "config": {
+    "step": {
+      "user": {
+        "description": "Configure your Aneo Mobility account.",
+        "data": {
+          "url": "Base API url",
+          "username": "Email address",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect to Aneo Mobility API.",
+      "invalid_auth": "Invalid credentials provided.",
+      "unknown": "Unexpected error occurred."
+    },
+    "abort": {}
+  },
+  "options": {
+    "step": {
+      "init": {
+        "description": "Update your Aneo Mobility account information.",
+        "data": {
+          "interval_charger_state": "Charger state refresh rate (minutes)",
+          "interval_price_data": "Price data gather interval (minutes)"
+        },
+        "data_description": {
+          "interval_schedules": "Details on which entities are updated by each coordinator are in the README."
+        }
+      }
+    },
+    "error": {},
+    "abort": {}
+  },
+  "entity": {
+    "sensor": {
+      "raw_charger_status": {
+        "name": "Raw charger status"
+      },
+      "price": {
+        "name": "Price"
+      }
+    },
+    "binary_sensor": {
+      "cable_locked": {
+        "name": "Charge cable locked"
+      },
+      "charging": {
+        "name": "Charging"
+      },
+      "car_connected": {
+        "name": "Car connected"
+      }
+    },
+    "switch": {
+      "charging_control": {
+        "name": "Charging control"
+      },
+      "cable_lock": {
+        "name": "Cable lock"
+      }
+    }
+  }
+}

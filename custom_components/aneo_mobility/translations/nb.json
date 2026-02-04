@@ -1,0 +1,66 @@
+{
+  "title": "Aneo Mobility",
+  "config": {
+    "step": {
+      "user": {
+        "description": "Konfigurer Aneo Mobility-kontoen din.",
+        "data": {
+          "url": "API-adresse (URL)",
+          "username": "E-postadresse",
+          "password": "Passord"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Kunne ikke koble til Aneo Mobility-API.",
+      "invalid_auth": "Ugyldige innloggingsdetaljer. Kontroller at du bruker en Aneo Mobility-konto.",
+      "unknown": "En uventet feil oppstod."
+    },
+    "abort": {}
+  },
+  "options": {
+    "step": {
+      "init": {
+        "description": "Oppdater innstillingene for Aneo Mobility-kontoen din.",
+        "data": {
+          "interval_charger_state": "Oppdateringsintervall for laderstatus (minutter)",
+          "interval_price_data": "Oppdateringsintervall for prisdata (minutter)"
+        },
+        "data_description": {
+          "interval_schedules": "Detaljer om hvilke enheter som oppdateres av hver koordinator står i README-filen."
+        }
+      }
+    },
+    "error": {},
+    "abort": {}
+  },
+  "entity": {
+    "sensor": {
+      "raw_charger_status": {
+        "name": "Rå laderstatus"
+      },
+      "price": {
+        "name": "Pris"
+      }
+    },
+    "binary_sensor": {
+      "cable_locked": {
+        "name": "Ladekabel låst"
+      },
+      "charging": {
+        "name": "Lader"
+      },
+      "car_connected": {
+        "name": "Bil tilkoblet"
+      }
+    },
+    "switch": {
+      "charging_control": {
+        "name": "Ladekontroll"
+      },
+      "cable_lock": {
+        "name": "Kabel­lås"
+      }
+    }
+  }
+}
