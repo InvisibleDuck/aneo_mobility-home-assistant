@@ -1,3 +1,4 @@
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=InvisibleDuck&category=EV+Charging&repository=https%3A%2F%2Fgithub.com%2FInvisibleDuck%2Fhass-aneo-mobility)
 # Aneo Mobility (Home Assistant integration)
 
 A custom Home Assistant integration for Aneo Mobility EV chargers, providing charger status, price information, and basic control (start/stop charging and cable lock).
